@@ -16,7 +16,7 @@
 <meta property="og:description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-11-25T14:42:51.897Z">
+<meta property="og:updated_time" content="2019-11-25T14:54:07.629Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vs code使用mingw-w64编译运行c">
 <meta name="twitter:description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 1013 个字)
+                    7 分钟 读完 (大约 1003 个字)
                 </span>
                 
                 
@@ -174,8 +174,17 @@
 <a id="more"></a>
 <p>4.将您的Mingw-w64 bin文件夹的路径添加到Windows PATH环境变量。<br>转到Windows操作系统设置，然后为您的帐户搜索“编辑”环境变量。<br>选择Path变量，然后选择“ 编辑”。<br>选择“ 新建”，然后将Mingw-w64路径添加到系统路径。确切的路径取决于您安装的Mingw-w64版本和安装位置。这是一个示例：c:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin。<br>选择确定以保存Path更新。您将需要重新打开所有控制台窗口，以使新的PATH位置可用。    </p>
 <p><strong><em>配置编译器路径</em></strong><br>1.按Ctrl + Shift + P打开命令面板  </p>
-<p><img src="%5Cimages%5Cpasted-1.png%5C" alt="upload successful"><br>2.输入c/c++,选择Edit Configurations (UI)</p>
-<p><img src="%5Cimages%5Cpasted-2.png%5C" alt="upload successful"><br>3.找到编译器路径设置。VS Code会根据在系统上找到的内容尝试使用默认编译器填充它。它首先查找MSVC编译器，然后在Windows Subsystem for Linux（WSL）上查找g ++，然后在Mingw-w64上查找g ++。如果安装了Visual Studio或WSL，则需要在此处更改编译器路径。如果使用Win32线程和SEH异常处理在C：\ mingw-w64下安装Mingw-w64版本8.1.0，则路径应如下所示：C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe。如果在安装Mingw-w64时选择了其他选项，则您的路径将不同。<br>该编译器的路径设置是配置中的最重要的设置。该扩展使用它来推断C ++标准库头文件的路径。当扩展知道在哪里可以找到那些文件时，它可以在您编写代码时为您提供许多有用的信息。此信息称为IntelliSense，您将在本教程的后面看到一些示例。<br>4.将IntelliSense模式设置为gcc-x64。<br><strong><em>创建构建任务</em></strong><br>1.创建一个Tasks.json文件<br>2.用下面的代码替换  </p>
+<img src="../images/pasted-1.png" width="70%">
+2.输入c/c++,选择Edit Configurations (UI)
+
+<img src="../images/pasted-2.png" width="70%">
+3.找到编译器路径设置。VS Code会根据在系统上找到的内容尝试使用默认编译器填充它。它首先查找MSVC编译器，然后在Windows Subsystem for Linux（WSL）上查找g ++，然后在Mingw-w64上查找g ++。如果安装了Visual Studio或WSL，则需要在此处更改编译器路径。如果使用Win32线程和SEH异常处理在C：\ mingw-w64下安装Mingw-w64版本8.1.0，则路径应如下所示：C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe。如果在安装Mingw-w64时选择了其他选项，则您的路径将不同。
+该编译器的路径设置是配置中的最重要的设置。该扩展使用它来推断C ++标准库头文件的路径。当扩展知道在哪里可以找到那些文件时，它可以在您编写代码时为您提供许多有用的信息。此信息称为IntelliSense，您将在本教程的后面看到一些示例。  
+4.将IntelliSense模式设置为gcc-x64。  
+***创建构建任务***  
+1.创建一个Tasks.json文件  
+2.用下面的代码替换  
+
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">  &quot;tasks&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;label&quot;: &quot;build hello world&quot;,</span><br><span class="line">      &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">      &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">      &quot;args&quot;: [&quot;-g&quot;, &quot;-o&quot;, &quot;helloworld&quot;, &quot;helloworld.cpp&quot;],</span><br><span class="line">      &quot;group&quot;: &#123;</span><br><span class="line">        &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">        &quot;isDefault&quot;: true</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>该command设置指定要运行的程序；在这种情况下，它就是g ++。exe。该args数组指定将传递给g ++的命令行参数。必须按照编译器期望的顺序指定这些参数。<br>该label值就是您将在VS Code命令面板中看到的值；您可以随意命名。<br>对象中的isDefault”: true值group指定当您按Ctrl + Shift + B时将运行此任务。此属性仅出于方便起见；如果将其设置为false，则必须从“ 运行构建任务”下的“命令面板”菜单中运行它。<br><strong><em>配置调试设置</em></strong><br>1.在命令面板中，键入“ launch”，然后选择Debug: Open launch.json。接下来，选择GDB / LLDB环境。<br>2.对于program，请使用程序名称helloworld.exe（与您在tasks.json中指定的名称匹配）。您将需要调整您的miDebuggerPath值以匹配Mingw-w64安装的路径。<br>3.默认情况下，在C ++扩展名的第一行添加了一个断点main。该stopAtEntry值设置为true使调试器在该断点处停止。如果您希望忽略它，可以将其设置为false。<br>完整的launch.json内容应如下:  </p>
