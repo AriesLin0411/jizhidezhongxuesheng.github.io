@@ -16,7 +16,7 @@
 <meta property="og:description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-11-25T15:08:30.630Z">
+<meta property="og:updated_time" content="2019-11-25T15:38:44.492Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vs code使用mingw-w64编译运行c">
 <meta name="twitter:description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
@@ -174,10 +174,10 @@
 <a id="more"></a>
 <p>4.将您的Mingw-w64 bin文件夹的路径添加到Windows PATH环境变量。<br>转到Windows操作系统设置，然后为您的帐户搜索“编辑”环境变量。<br>选择Path变量，然后选择“ 编辑”。<br>选择“ 新建”，然后将Mingw-w64路径添加到系统路径。确切的路径取决于您安装的Mingw-w64版本和安装位置。这是一个示例：c:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin。<br>选择确定以保存Path更新。您将需要重新打开所有控制台窗口，以使新的PATH位置可用。    </p>
 <p><strong><em>配置编译器路径</em></strong><br>1.按Ctrl + Shift + P打开命令面板  </p>
-<img src="http://duckduck.me/images/pasted-1.png" width="70%">
+<img src="http://duckduck.me/images/pasted-1.png" width="70%">  
 2.输入c/c++,选择Edit Configurations (UI)
 
-<img src="http://duckduck.me/images/pasted-2.png" width="70%">
+<img src="http://duckduck.me/images/pasted-2.png" width="70%">  
 3.找到编译器路径设置。VS Code会根据在系统上找到的内容尝试使用默认编译器填充它。它首先查找MSVC编译器，然后在Windows Subsystem for Linux（WSL）上查找g ++，然后在Mingw-w64上查找g ++。如果安装了Visual Studio或WSL，则需要在此处更改编译器路径。如果使用Win32线程和SEH异常处理在C：\ mingw-w64下安装Mingw-w64版本8.1.0，则路径应如下所示：C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe。如果在安装Mingw-w64时选择了其他选项，则您的路径将不同。
 该编译器的路径设置是配置中的最重要的设置。该扩展使用它来推断C ++标准库头文件的路径。当扩展知道在哪里可以找到那些文件时，它可以在您编写代码时为您提供许多有用的信息。此信息称为IntelliSense，您将在本教程的后面看到一些示例。  
 4.将IntelliSense模式设置为gcc-x64。  
