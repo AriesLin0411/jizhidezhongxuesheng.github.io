@@ -2,22 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>归档 - 时光走了你还在的博客</title>
+<title>vs code使用mingw-w64编译运行c - 时光走了你还在的博客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="a personal blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="时光走了你还在的博客">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+    <meta name="description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
+<meta name="keywords" content="vs code,c&#x2F;c++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vs code使用mingw-w64编译运行c">
+<meta property="og:url" content="http://yoursite.com/2019/11/25/vs-code使用mingw-w64编译运行c/index.html">
 <meta property="og:site_name" content="时光走了你还在的博客">
-<meta property="og:description" content="a personal blog">
+<meta property="og:description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-11-25T14:42:51.897Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="时光走了你还在的博客">
-<meta name="twitter:description" content="a personal blog">
+<meta name="twitter:title" content="vs code使用mingw-w64编译运行c">
+<meta name="twitter:description" content="在VS Code中使用Mingw-w641.安装Visual Studio代码。2.为VS Code安装C ++扩展。3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -94,7 +96,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/code.ico" alt="时光走了你还在的博客" height="28">
+                <img src="/images/code.ico" alt="vs code使用mingw-w64编译运行c" height="28">
             
             </a>
         </div>
@@ -139,76 +141,136 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
         
-<div class="card widget">
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-25T14:19:00.000Z">2019-11-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/code/">code</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 分钟 读完 (大约 1013 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                vs code使用mingw-w64编译运行c
+            
+        </h1>
+        <div class="content">
+            <h2 id="在VS-Code中使用Mingw-w64"><a href="#在VS-Code中使用Mingw-w64" class="headerlink" title="在VS Code中使用Mingw-w64"></a>在VS Code中使用Mingw-w64</h2><p>1.安装Visual Studio代码。<br>2.为VS Code安装C ++扩展。<br>3.Mingw-w64安装到其路径中没有空格的文件夹（换句话说，不是C:/Program Files/的默认位置）。在本教程中，我们假定将其安装在下C:\Mingw-w64。  </p>
+<a id="more"></a>
+<p>4.将您的Mingw-w64 bin文件夹的路径添加到Windows PATH环境变量。<br>转到Windows操作系统设置，然后为您的帐户搜索“编辑”环境变量。<br>选择Path变量，然后选择“ 编辑”。<br>选择“ 新建”，然后将Mingw-w64路径添加到系统路径。确切的路径取决于您安装的Mingw-w64版本和安装位置。这是一个示例：c:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin。<br>选择确定以保存Path更新。您将需要重新打开所有控制台窗口，以使新的PATH位置可用。    </p>
+<p><strong><em>配置编译器路径</em></strong><br>1.按Ctrl + Shift + P打开命令面板  </p>
+<p><img src="%5Cimages%5Cpasted-1.png%5C" alt="upload successful"><br>2.输入c/c++,选择Edit Configurations (UI)</p>
+<p><img src="%5Cimages%5Cpasted-2.png%5C" alt="upload successful"><br>3.找到编译器路径设置。VS Code会根据在系统上找到的内容尝试使用默认编译器填充它。它首先查找MSVC编译器，然后在Windows Subsystem for Linux（WSL）上查找g ++，然后在Mingw-w64上查找g ++。如果安装了Visual Studio或WSL，则需要在此处更改编译器路径。如果使用Win32线程和SEH异常处理在C：\ mingw-w64下安装Mingw-w64版本8.1.0，则路径应如下所示：C:\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\g++.exe。如果在安装Mingw-w64时选择了其他选项，则您的路径将不同。<br>该编译器的路径设置是配置中的最重要的设置。该扩展使用它来推断C ++标准库头文件的路径。当扩展知道在哪里可以找到那些文件时，它可以在您编写代码时为您提供许多有用的信息。此信息称为IntelliSense，您将在本教程的后面看到一些示例。<br>4.将IntelliSense模式设置为gcc-x64。<br><strong><em>创建构建任务</em></strong><br>1.创建一个Tasks.json文件<br>2.用下面的代码替换  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">  &quot;tasks&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;label&quot;: &quot;build hello world&quot;,</span><br><span class="line">      &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">      &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">      &quot;args&quot;: [&quot;-g&quot;, &quot;-o&quot;, &quot;helloworld&quot;, &quot;helloworld.cpp&quot;],</span><br><span class="line">      &quot;group&quot;: &#123;</span><br><span class="line">        &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">        &quot;isDefault&quot;: true</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该command设置指定要运行的程序；在这种情况下，它就是g ++。exe。该args数组指定将传递给g ++的命令行参数。必须按照编译器期望的顺序指定这些参数。<br>该label值就是您将在VS Code命令面板中看到的值；您可以随意命名。<br>对象中的isDefault”: true值group指定当您按Ctrl + Shift + B时将运行此任务。此属性仅出于方便起见；如果将其设置为false，则必须从“ 运行构建任务”下的“命令面板”菜单中运行它。<br><strong><em>配置调试设置</em></strong><br>1.在命令面板中，键入“ launch”，然后选择Debug: Open launch.json。接下来，选择GDB / LLDB环境。<br>2.对于program，请使用程序名称helloworld.exe（与您在tasks.json中指定的名称匹配）。您将需要调整您的miDebuggerPath值以匹配Mingw-w64安装的路径。<br>3.默认情况下，在C ++扩展名的第一行添加了一个断点main。该stopAtEntry值设置为true使调试器在该断点处停止。如果您希望忽略它，可以将其设置为false。<br>完整的launch.json内容应如下:  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">  // Use IntelliSense to learn about possible attributes.</span><br><span class="line">  // Hover to view descriptions of existing attributes.</span><br><span class="line">  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387</span><br><span class="line">  &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">  &quot;configurations&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;(gdb) Launch&quot;,</span><br><span class="line">      &quot;type&quot;: &quot;cppdbg&quot;,</span><br><span class="line">      &quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">      &quot;program&quot;: &quot;$&#123;workspaceFolder&#125;/helloworld.exe&quot;,</span><br><span class="line">      &quot;args&quot;: [],</span><br><span class="line">      &quot;stopAtEntry&quot;: true,</span><br><span class="line">      &quot;cwd&quot;: &quot;$&#123;workspaceFolder&#125;&quot;,</span><br><span class="line">      &quot;environment&quot;: [],</span><br><span class="line">      &quot;externalConsole&quot;: true,</span><br><span class="line">      &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">      &quot;miDebuggerPath&quot;: &quot;C:\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe&quot;,</span><br><span class="line">      &quot;setupCommands&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">          &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,</span><br><span class="line">          &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">          &quot;ignoreFailures&quot;: true</span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>最后运行代码即可</em></strong></p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/c-c/">c/c++</a>, <a class="has-link-grey -link" href="/tags/vs-code/">vs code</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-02T02:05:00.000Z">2019-04-02</time>
-                        <a href="/2019/04/02/刺客信条奥德赛武器技巧之长矛/" class="has-link-black-ter is-size-6">刺客信条奥德赛武器技巧之长矛</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/游戏攻略/">游戏攻略</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/支付宝.jpg" alt="支付宝"></div>
+</a>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-02T02:04:00.000Z">2019-04-02</time>
-                        <a href="/2019/04/02/刺客信条奥德赛战斗技巧综述/" class="has-link-black-ter is-size-6">刺客信条奥德赛战斗技巧综述</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/游戏攻略/">游戏攻略</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/微信.png" alt="微信"></div>
+</a>
+
+                
         </div>
     </div>
 </div>
 
-    
 
-    
+
 <div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/archives/">上一页</a>
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/01/分享一些比较好用的软件/">
+                <span class="level-item">分享一些比较好用的软件</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/archives/page/3/">下一页</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link has-text-black-ter" href="/archives/">1</a></li>
-            
-            <li><a class="pagination-link is-current" href="/archives/page/2/">2</a></li>
-            
-        </ul>
-    </nav>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'f66CaSlzSp6wLmWCgxAvYhB1-gzGzoHsz',
+        app_key: '2h5EEcDNF1kl6TqJz27xAi0T',
+        placeholder: '说说你的感想'
+    });
+</script>
+
+    </div>
 </div>
 </div>
                 
@@ -863,7 +925,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/code.ico" alt="时光走了你还在的博客" height="28">
+                    <img src="/images/code.ico" alt="vs code使用mingw-w64编译运行c" height="28">
                 
                 </a>
                 <p class="is-size-7">
