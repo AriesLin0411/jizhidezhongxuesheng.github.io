@@ -2,23 +2,22 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>关于本站 - 时光走了你还在的博客</title>
+<title>标签: python - 时光走了你还在的博客</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="本站使用hexo搭建站点的主题是icarus评论系统使用valine托管于阿里云">
+    <meta name="description" content="a personal blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="关于本站">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta property="og:title" content="时光走了你还在的博客">
+<meta property="og:url" content="http://yoursite.com/tags/python/index.html">
 <meta property="og:site_name" content="时光走了你还在的博客">
-<meta property="og:description" content="本站使用hexo搭建站点的主题是icarus评论系统使用valine托管于阿里云">
+<meta property="og:description" content="a personal blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-23T13:19:41.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于本站">
-<meta name="twitter:description" content="本站使用hexo搭建站点的主题是icarus评论系统使用valine托管于阿里云">
+<meta name="twitter:title" content="时光走了你还在的博客">
+<meta name="twitter:description" content="a personal blog">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -95,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/code.ico" alt="关于本站" height="28">
+                <img src="/images/code.ico" alt="时光走了你还在的博客" height="28">
             
             </a>
         </div>
@@ -111,7 +110,7 @@
                 
                 <a class="navbar-item" href="/tags">Tags</a>
                 
-                <a class="navbar-item is-active" href="/about">About</a>
+                <a class="navbar-item" href="/about">About</a>
                 
             </div>
             
@@ -141,83 +140,253 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">python</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
     
     <div class="card-content article ">
         
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-27T06:47:00.000Z">2019-11-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/python编程/">python编程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 733 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                关于本站
+                <a class="has-link-black-ter" href="/2019/11/27/python练习-鸡兔同笼/">python练习--鸡兔同笼</a>
             
         </h1>
         <div class="content">
-            <p>本站使用hexo搭建<br>站点的主题是icarus<br>评论系统使用valine<br>托管于阿里云</p>
+            <center>## 鸡兔同笼</center>
+**描述**  
+大约在1500年前，《孙子算经》中就记载了这个有趣的问题。书中是这样叙述的：
+今有雉兔同笼，上有三十五头，下有九十四足，问雉兔各几何？
+这四句话的意思是：
+有若干只鸡兔同在一个笼子里，从上面数，有35个头，从下面数，有94只脚。问笼中各有多少只鸡和兔？‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬
 
+<p>请编一个程序，用户在同一行内输入两个整数，代表头和脚的数量，编程计算笼中各有多少只鸡和兔，假设鸡和兔都正常，无残疾。如无解则输出Data Error!  </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a,b = input().split()  #读入两个数到a b中</span><br><span class="line">a,b = map(int,input().split(&apos;,&apos;))  #读入两个整数到a，b中，输入的数用逗号分隔</span><br><span class="line">a,b = map(int,input().split(&apos; &apos;))  #读入两个整数到a，b中，输入的数用空格分隔</span><br></pre></td></tr></table></figure>
         </div>
         
         
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/11/27/python练习-鸡兔同笼/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
-        <div class="social-share"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
-<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-27T06:44:00.000Z">2019-11-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/python编程/">python编程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 379 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                
-<a class="button is-info donate">
-    <span class="icon is-small">
-        <i class="fab fa-alipay"></i>
-    </span>
-    <span>支付宝</span>
-    <div class="qrcode"><img src="/images/支付宝.jpg" alt="支付宝"></div>
-</a>
+                <a class="has-link-black-ter" href="/2019/11/27/python练习-棋盘放米/">python练习--棋盘放米</a>
+            
+        </h1>
+        <div class="content">
+            <center>棋盘放米
+------
+</center>
+ ‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬
 
-                
-                
-<a class="button is-success donate">
-    <span class="icon is-small">
-        <i class="fab fa-weixin"></i>
-    </span>
-    <span>微信</span>
-    <div class="qrcode"><img src="/images/微信.png" alt="微信"></div>
-</a>
-
-                
+<p><strong>描述</strong><br>相传古代印度国王舍罕要褒赏他的聪明能干的宰相达依尔 （国际象棋发明者），问他需要什么，达依尔回答说：“国王只要在国际象棋的棋盘第一个格子里放一粒麦子，第二个格子里放两粒，第三个格子里放四粒，按此比例以后每一格加一倍，一直放到64格（国际象棋棋盘是8×8=64格），我就感恩不尽，其他的我什么也不要了，”国王想：“这有多少，还不容易！”让人扛来一袋小麦，但不到一会儿全用没了，再来一袋很快又没有了，结果全印度的粮食全部用完还不够，国王纳闷，怎样也算不清这笔账，请你帮国王计算一下，共需多少粒麦子，写出程序。</p>
         </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: false,
-        verify: false,
-        app_id: 'f66CaSlzSp6wLmWCgxAvYhB1-gzGzoHsz',
-        app_key: '2h5EEcDNF1kl6TqJz27xAi0T',
-        placeholder: '说说你的感想'
-    });
-</script>
-
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/11/27/python练习-棋盘放米/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
     </div>
 </div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-26T11:58:00.000Z">2019-11-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/python编程/">python编程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 310 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/11/26/python练习-三角函数计算/">python练习--三角函数计算</a>
+            
+        </h1>
+        <div class="content">
+            <center>三角函数计算
+---
+</center>
+ ‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬
+
+<p><strong>描述</strong><br>根据下面公式计算并输出x的值，a和b的值由用户输入，括号里的数字是角度值， 圆周率的值使用数学常数math.pi。‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬</p>
+<p><img src="/images/img-1.png" alt="upload successful"></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/11/26/python练习-三角函数计算/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-26T11:48:00.000Z">2019-11-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/python编程/">python编程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 593 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/11/26/python练习-同符号三角运算-1/">python练习--同符号数学运算</a>
+            
+        </h1>
+        <div class="content">
+            <center>同符号数学运算
+---
+</center>
+ ‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬
+
+<p><strong>描述</strong><br>读入一个整数N，分别计算如下内容：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬  </p>
+<ol>
+<li>N的绝对值；‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬  </li>
+<li>N与10进行同符号加法、减法和乘法运算，同符号运算指使用N的绝对值与另一个数进行运算，运算结果的绝对值被赋予N相同的符号，其中，0的符号是正号。‪‬‪‬‪‬‪‬‪‬‮‬‪‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬  </li>
+</ol>
+<p>将上述4项结果在一行输出，采用空格分隔，输出结果均为整数。</p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/11/26/python练习-同符号三角运算-1/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
 </div>
                 
 
@@ -973,7 +1142,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/code.ico" alt="关于本站" height="28">
+                    <img src="/images/code.ico" alt="时光走了你还在的博客" height="28">
                 
                 </a>
                 <p class="is-size-7">
